@@ -73,7 +73,7 @@ proxy-providers: # ← 此函数位置请勿变动！此为模块更新时备份
     # override:
     #   additional-prefix: "Main："
     path: ./proxies/1.主要地址.yaml
-    url: ""
+    url: "https://substore.osur.eu/T3z9dgdBzrRbBF8Aqx7P/download/collection/all"
 
   2.备用地址:
     <<: *p
@@ -277,7 +277,7 @@ proxy-groups:
     icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Globe.svg"
     filter: "^(?!.*(港|HK|hk|Hong Kong|HongKong|hongkong|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|灾|网易|Netease|套餐|重置|剩余|到期|订阅|群|账户|流量|有效期|时间|官网)).*$"
     <<: *All
-    
+
   - name: 延迟最低
     icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Return.svg"
     type: url-test
@@ -325,53 +325,57 @@ proxy-groups:
     icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Microsoft.svg"
     <<: *CNproxy_groups
 
-  - name: Telegram
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Telegram.svg"
-    <<: *proxy_groups
+  # - name: Telegram
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Telegram.svg"
+  #   <<: *proxy_groups
 
-  - name: Discord
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Discord.svg"
-    <<: *proxy_groups
+  # - name: Discord
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Discord.svg"
+  #   <<: *proxy_groups
 
   - name: Spotify
     icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Spotify.svg"
     <<: *proxy_groups
 
-  - name: TikTok
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/TikTok.svg"
+  - name: Crypto
+    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Crypto.svg"
     <<: *proxy_groups
 
-  - name: YouTube
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/YouTube.svg"
-    <<: *proxy_groups
+  # - name: TikTok
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/TikTok.svg"
+  #   <<: *proxy_groups
 
-  - name: Netflix
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Netflix.svg"
-    <<: *proxy_groups
+  # - name: YouTube
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/YouTube.svg"
+  #   <<: *proxy_groups
 
-  - name: Google
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Google.svg"
-    <<: *proxy_groups
+  # - name: Netflix
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Netflix.svg"
+  #   <<: *proxy_groups
+
+  # - name: Google
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Google.svg"
+  #   <<: *proxy_groups
 
   - name: GoogleFCM
     icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/GoogleFCM.svg"
     <<: *proxy_groups
 
-  - name: Facebook
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Facebook.svg"
-    <<: *proxy_groups
+  # - name: Facebook
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Facebook.svg"
+  #   <<: *proxy_groups
 
   - name: OpenAI
     icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/OpenAI.svg"
     <<: *proxy_groups
 
-  - name: GitHub
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/GitHub.svg"
-    <<: *proxy_groups
+  # - name: GitHub
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/GitHub.svg"
+  #   <<: *proxy_groups
 
-  - name: Twitter(X)
-    icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Twitter.svg"
-    <<: *proxy_groups
+  # - name: Twitter(X)
+  #   icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/Twitter.svg"
+  #   <<: *proxy_groups
 
   - name: DNS连接
     icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/DNS.svg"
@@ -402,8 +406,6 @@ proxy-groups:
   - name: 白名单出站
     icon: "https://cdn.jsdelivr.net/gh/MoGuangYu/Surfing@rm/Home/icon/User.svg"
     <<: *CNproxy_groups
-
-
 
 # —————————
 
@@ -553,6 +555,11 @@ rule-providers:
     path: ./rules/OpenAI_IP.mrs
     url: "https://cdn.jsdelivr.net/gh/MoGuangYu/rule@master/rule/Clash/OpenAI/OpenAI_OCD_IP.mrs"
 
+  Crypto_域:
+    <<: *Classical
+    path: ./rules/Crypto.list
+    url: "https://raw.githubusercontent.com/Rain-kl/rules/refs/heads/dev/rules/Crypto.list"
+
   Netflix_域:
     <<: *Domain
     path: ./rules/Netflix.mrs
@@ -611,32 +618,33 @@ rules:
   # - RULE-SET,BiliBili_IP,BiliBili
 
   - RULE-SET,Steam_域,Steam
+  - RULE-SET,Crypto_域,Crypto
 
-  - RULE-SET,GitHub_域,GitHub
+  # - RULE-SET,GitHub_域,GitHub
 
-  - RULE-SET,Discord_域,Discord
+  # - RULE-SET,Discord_域,Discord
 
-  - RULE-SET,TikTok_域,TikTok
+  # - RULE-SET,TikTok_域,TikTok
 
-  - RULE-SET,Twitter_域,Twitter(X)
-  - RULE-SET,Twitter_IP,Twitter(X)
+  # - RULE-SET,Twitter_域,Twitter(X)
+  # - RULE-SET,Twitter_IP,Twitter(X)
 
-  - RULE-SET,YouTube_域,YouTube
-  - RULE-SET,YouTube_IP,YouTube
+  # - RULE-SET,YouTube_域,YouTube
+  # - RULE-SET,YouTube_IP,YouTube
 
   - DOMAIN-KEYWORD,mtalk.google,GoogleFCM
 
-  - RULE-SET,Google_域,Google
-  - RULE-SET,Google_IP,Google
+  # - RULE-SET,Google_域,Google
+  # - RULE-SET,Google_IP,Google
 
-  - RULE-SET,Netflix_域,Netflix
-  - RULE-SET,Netflix_IP,Netflix
+  # - RULE-SET,Netflix_域,Netflix
+  # - RULE-SET,Netflix_IP,Netflix
 
   - RULE-SET,Spotify_域,Spotify
   - RULE-SET,Spotify_IP,Spotify
 
-  - RULE-SET,Facebook_域,Facebook
-  - RULE-SET,Facebook_IP,Facebook
+  # - RULE-SET,Facebook_域,Facebook
+  # - RULE-SET,Facebook_IP,Facebook
 
   - RULE-SET,OpenAI_域,OpenAI
   - RULE-SET,OpenAI_IP,OpenAI
@@ -646,8 +654,8 @@ rules:
 
   - RULE-SET,Microsoft_域,Microsoft
 
-  - RULE-SET,Telegram_域,Telegram
-  - RULE-SET,Telegram_IP,Telegram
+  # - RULE-SET,Telegram_域,Telegram
+  # - RULE-SET,Telegram_IP,Telegram
 
   - DOMAIN,browserleaks.com,漏网之鱼
 
